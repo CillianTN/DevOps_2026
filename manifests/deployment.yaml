@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aspnet-hello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aspnet-hello
+  template:
+    metadata:
+      labels:
+        app: aspnet-hello
+    spec:
+      containers:
+      - name: app
+        image: cilliann/devops-2026:1.0
+        ports:
+        - containerPort: 8080
