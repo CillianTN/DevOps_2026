@@ -17,3 +17,6 @@ spec:
         image: cilliann/devops-2026:1.0
         ports:
         - containerPort: 8080
+        emvFrom:
+        - configMapRef:
+          name: app-config
