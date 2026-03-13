@@ -17,6 +17,3 @@ spec:
         image: cilliann/devops-2026:2.0
         ports:
         - containerPort: 8080
-        envFrom:
-        - configMapRef:
-            name: app-config
